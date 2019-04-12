@@ -18,11 +18,13 @@ It assumes you put all of your code checkouts under `~/src`.
  1. Clone this repo.
  2. `cd` into the repo folder and run these commands:
 
+```
     docker volume create nix
     ./build-dockernix
     ln -s "`pwd`/nix-shell-docker ~/bin
     ln -s "`pwd`/start-dockernix" ~/bin
     ln -s "`pwd`/stop-dockernix" ~/bin
+```
 
 I don't currently run nix on macos, so I rename the first link to `nix-shell`.
 

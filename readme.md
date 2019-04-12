@@ -34,6 +34,8 @@ Firstly, run `start-dockernix` to start up.
 
 Then, use `nix-shell-docker` just like you would `nix-shell`. `cd` into your project folder and run `nix-shell-docker`. 
 
+If you want to shut down the container: `stop-dockernix`.
+
 # How it works
 
 The docker image is based on a simple minimal nixos build. 

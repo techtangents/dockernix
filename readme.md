@@ -21,7 +21,7 @@ It assumes you put all of your code checkouts under `~/src`.
 ```
 docker volume create nix
 ./build-dockernix
-ln -s "`pwd`/nix-shell-docker ~/bin
+ln -s "`pwd`/nix-shell-docker" ~/bin
 ln -s "`pwd`/start-dockernix" ~/bin
 ln -s "`pwd`/stop-dockernix" ~/bin
 ```

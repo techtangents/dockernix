@@ -1,2 +1,0 @@
-#!/bin/sh
-docker run --rm --name dockernix -d --mount type=bind,src=$HOME/src,dst=$HOME/src --mount type=volume,src=nix,dst=/nix dockernix:latest tail -f /dev/null

@@ -1,2 +1,3 @@
 #!/bin/sh
-docker stop dockernix && docker rm dockernix
+docker stop dockernix || true
+docker rm dockernix || true

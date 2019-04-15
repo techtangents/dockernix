@@ -2,6 +2,7 @@
 docker run --rm --name dockernix -d\
   --mount type=bind,src=$HOME/src,dst=$HOME/src\
   --mount type=volume,src=nix,dst=/nix\
-  --mount type=bind,src=$HOME/.git,dst=$HOME/.git,readonly\
-  --mount type=bind,src=$HOME/.aws,dst=$HOME/.aws,readonly\
+  --mount type=bind,src=$HOME/.git,dst=/root/.git,readonly\
+  --mount type=bind,src=$HOME/.aws,dst=/root/.aws,readonly\
+  --mount type=bind,src=$HOME/.vault_pass,dst=/root/.vault_pass,readonly\
   dockernix:latest tail -f /dev/null
